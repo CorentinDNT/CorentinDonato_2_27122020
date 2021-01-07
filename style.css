@@ -1,0 +1,115 @@
+body{
+    font-family: 'ralewaythin';
+    margin: 0;
+}
+#bloc_page{
+    font-family: 'Raleway', sans-serif;
+    border: red solid 3px;
+    box-sizing: border-box;
+}
+.full{
+    color: #0065FC;
+}
+.empty{
+    color: #f2f2f2;
+}
+.price{
+    font-weight: bold;
+}
+* a{
+    text-decoration: none;
+}
+
+/*---------------------------------*\
+
+$HEADER
+
+\*---------------------------------*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo{
+    margin-left: 20px;
+    width: calc(100% - 120px);
+    order: -1;
+}
+.signup {
+    order: -1;
+    width: 80px;
+    order: ;
+}
+.signup p {
+    margin: 0;
+    width: 10px;
+}
+.signup a {
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    width: 100%;
+}
+nav a {
+    display: block;
+    text-align: center;
+    width: 50%;
+    color: black;
+    border-bottom: 3px solid #f2f2f2;
+}
+nav a:hover {
+    border-bottom: 3px #0065FC solid;
+    color: #0065FC;
+}
+/*---------------------------------*\
+
+$SEARCH
+
+\*---------------------------------*/
+#search{
+    margin: 0 20px;
+}
+form{
+    justify-content: baseline;
+    display: flex;
+    align-items: center; 
+}
+#search h1{
+    font-size: 19px;
+}
+#search p{
+    font-size: 13px;
+}
+#recherche{
+    background-color: white;
+    border: 1px solid #f2f2f2; 
+    height: 42px;
+    width: 250px;
+    font-weight: bold;
+}
+#search-btn{
+    display: none;
+}
+#search-icn {
+    position: relative;
+    left: -15px;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 15px 15px 15px 15px;
+    height: 48px;
+    width: 48px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+#location{
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 20px 0 0 20px;
+    height: 46px;
+    width: 51px;
+    
+}
