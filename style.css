@@ -11,7 +11,7 @@ body{
     color: #0065FC;
 }
 .empty{
-    color: #f2f2f2;
+    color: #F2F2F2;
 }
 .price{
     font-weight: bold;
@@ -22,6 +22,7 @@ body{
 }
 * {
     outline-style: none;
+    list-style: none;
 }
 
 /*---------------------------------*\
@@ -42,7 +43,6 @@ header{
 .signup {
     order: -1;
     width: 80px;
-    order: ;
 }
 .signup p {
     margin: 0;
@@ -62,7 +62,7 @@ nav a {
     text-align: center;
     width: 50%;
     color: black;
-    border-bottom: 3px solid #f2f2f2;
+    border-bottom: 3px solid #F2F2F2;
 }
 nav a:hover {
     border-bottom: 3px #0065FC solid;
@@ -90,7 +90,7 @@ form{
 #recherche{
     padding-left: 20px;
     background-color: white;
-    border: 1px solid #f2f2f2; 
+    border: 1px solid #F2F2F2; 
     height: 42px;
     width: 250px;
     font-weight: bold;
@@ -104,15 +104,15 @@ form{
     background: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 15px 15px 15px 15px;
-    height: 48px;
+    height: 45px;
     width: 48px;
     font-size: 17px;
     font-weight: bold;
     color: white;
 }
 #location{
-    border: 1px solid #f2f2f2;
-    background-color: #f2f2f2;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
     border-radius: 20px 0 0 20px;
     height: 46px;
     width: 51px;
@@ -159,34 +159,164 @@ $FILTERS
     margin-left: -8.9px;
 }
 
-.button-filters:hover{
+.button-filters:hover ,.button-filters:active{
     background-color: #0065FC;
+    border: 2px solid black;
     color: #DEEBFF;
     transition: .3s;
 }
+#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-info{
+    margin: 50px 1em 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px;
+    position: relative;
+    bottom: 27px;
+}
+.icon-btn{
+    font-size: 85%;
+}
+/*---------------------------------*\
+
+$HOUSING
+
+\*---------------------------------*/
+#container{
+    display: flex;
+    flex-direction: column;
+}
+#city-house{
+    margin-top: 10px;
+    order: 1;
+}
+#city-house h2{
+    font-size: 20px;
+    padding-left: 10%;
+}
+#show-more {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10%;
+}
+#housing {
+    display: flex;
+    flex-direction: column;
+}
 #housing a{
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 .hotel {
+    border-radius: 23px;
+    padding: 3px;
     height: 200px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.300), -1px -1px 15px rgba(0, 0, 0, 0.300 );
 }
 
 .hotel img{
+    border-radius: 20px 20px 0 0;
     height: 60%;
     width: 100%;
-}
-
-#housing {
-    display: flex;
-    flex-direction: column;
+    object-fit: cover;
 }
 
 .hotel-desc {
     display: flex;
     height: 40%;
+    padding-left: 12px;
+    display: flex;
+    padding-top: 8px;
+    flex-direction: column;
+    line-height: 20px;
+    font-size: 12px;
+}
+.hotel-desc h4{
+    font-size: 15px;
+    padding-bottom: 6px;
+}
+#pop-house{
+    background: #F2F2F2;
+    order: -1;
+    height: 450px;
+}
+#pop-house h2 {
+    margin: 30px 0;
+    font-size: 20px;
+    padding-left: 10%;
+}
+#trend-housing {
+    display: flex;
+    flex-direction: column;
+}
+#trend-housing a{
+    width: 80%;
+    margin: 3px auto;
+}
+.hotel-pop {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    background: white;
+    padding: 3px;
+    border-radius: 23px;
+}
+.hotel-pop img{
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+}
+.hotel-desc-t {
+    display: flex;
+    flex-direction: column;
+    line-height: 16px;
+    font-size: 12px;
+    padding-left: 15px;
+    width: 50%;
+}
+.popstar{
+    padding-top: 20px;
+}
+.hotel-desc-t h4{
+    padding: 5px 0 5px 0;
+}
+.hotel-desc p, .hotel-desc h4,.hotel-desc-t p, .hotel-desc-t h4{
+    margin: 0;
+}
+.hotel-desc h4{
+    font-weight: bold;
+}
+.fa-chart-line {
+    padding-left: 15%;
+}
+/*---------------------------------*\
+
+$HOUSING
+
+\*---------------------------------*/
+#footer{
+    background: #F2F2F2;
+    height: 100%;
+    width: 100%;
+    line-height: 30px
+}
+#footer h3{
+    padding-left: 12%;
+    margin-bottom: -15px;
 }
