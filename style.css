@@ -357,11 +357,14 @@ $FOOTER
 #footer{
     background: #F2F2F2;
     height: 100%;
-    width: 100%;
-    line-height: 30px
+    width: calc(100% - 12%);
+    line-height: 30px;
+    padding-left: 12%;
+}
+.foot_liste{
+    padding-left: 0;
 }
 #footer h3{
-    padding-left: 12%;
     margin-bottom: -15px;
 }
 /*---------------------------------*\
@@ -377,12 +380,6 @@ $FOOTER
     }
 }
 /*--------455px--------*/
-@media screen and (min-width: 455px)
-{
-    #search-icn{
-        display: none;
-    }
-}
 @media screen and (max-width: 455px)
 {
     #search-btn{
@@ -391,7 +388,11 @@ $FOOTER
 }
 @media screen and (min-width: 455px)
 {
-    #search-btn{
+    #search-icn{
+        display: none;
+    }
+    #search-btn
+    {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -410,6 +411,7 @@ $FOOTER
     #housing {
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: center;
     }
     #housing a{
         width: 50%;
@@ -419,25 +421,18 @@ $FOOTER
         width: 250px;
     }
     #trend-housing {
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         flex-direction: row;
     }
     #trend-housing a{
         width: 45%;
-        margin: 15px auto;
+        margin: 5px auto;
     }
     #pop-house {
-        height: 400px;
+        height: 440px;
     }
     .hotel-pop {
         height: 125px;
-        display: flex;
-        flex-direction: row;
-        margin: 0 auto;
-        width: 100%;
-        background: white;
-        padding: 3px;
-        border-radius: 23px;
     }
     .hotel-pop img{
         border-radius: 20px 0 0 20px;
@@ -445,17 +440,43 @@ $FOOTER
         width: 40%;
         object-fit: cover;
     }
-    #hotel1 {
-        height: 125px;
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 0 auto;
-        width: 100%;
-        background: white;
-        padding: 3px;
-        border-radius: 23px;
+    #item1 {
+        width: 80%;
     }
+    #hotel1 {
+        border-radius: 23px;
+        padding: 3px;
+        height: 180px;
+        flex-direction: column;
+        box-shadow: 2px 2px 15px rgba(165, 190, 22, 0.400), -2px -2px 15px rgba(165, 190, 22, 0.400);
+    }
+    
     #hotel1 img{
+        border-radius: 20px 20px 0 0;
+        height: 70%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #desct1 {
+        height: 30%;
+        flex-direction: column;
+        line-height: 13px;
+        width: 100%;
+    }
+    #star1{
+        padding-top: 5px;
+    }
+    #desct1 h4{
+        font-size: 13px;
+    }
+    #item1{
+        order: 2;
+    }
+    #hotel2{
+        flex-direction: row-reverse;
+    }
+    #hotel2 img{
         border-radius: 0 20px 20px 0;
     }
 }
