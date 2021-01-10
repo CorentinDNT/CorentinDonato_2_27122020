@@ -95,9 +95,6 @@ form{
     width: 250px;
     font-weight: bold;
 }
-#search-btn{
-    display: none;
-}
 #search-icn {
     position: relative;
     left: -15px;
@@ -134,6 +131,7 @@ $FILTERS
 }
 .button-filters{
     margin-top: 10px;
+    margin-right: 10px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -143,6 +141,7 @@ $FILTERS
     height: 46px;
 }
 .text{
+    font-size: 16px;
     padding-left: 3px;
     padding-right: 8px;
     font-weight: bold;
@@ -167,7 +166,7 @@ $FILTERS
 }
 #info{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .button-info{
@@ -259,9 +258,10 @@ $POPULAR
     height: 450px;
 }
 #pop-house h2 {
-    margin: 30px 0;
-    font-size: 20px;
-    padding-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    width: calc(100% - 60px);
 }
 #trend-housing {
     display: flex;
@@ -363,4 +363,99 @@ $FOOTER
 #footer h3{
     padding-left: 12%;
     margin-bottom: -15px;
+}
+/*---------------------------------*\
+
+@media
+
+\*---------------------------------*/
+@media screen and (min-width: 355px)
+{
+    #filter{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+/*--------455px--------*/
+@media screen and (min-width: 455px)
+{
+    #search-icn{
+        display: none;
+    }
+}
+@media screen and (max-width: 455px)
+{
+    #search-btn{
+        display: none;
+    }
+}
+@media screen and (min-width: 455px)
+{
+    #search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065fc;
+    color: #fff;
+    height: 45px;
+    width: 130px;
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    }
+}
+@media screen and (min-width: 600px)
+{
+    #housing {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #housing a{
+        width: 50%;
+        margin: 10px auto;
+    }
+    .hotel {
+        width: 250px;
+    }
+    #trend-housing {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #trend-housing a{
+        width: 45%;
+        margin: 15px auto;
+    }
+    #pop-house {
+        height: 400px;
+    }
+    .hotel-pop {
+        height: 125px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+        background: white;
+        padding: 3px;
+        border-radius: 23px;
+    }
+    .hotel-pop img{
+        border-radius: 20px 0 0 20px;
+        height: 100%;
+        width: 40%;
+        object-fit: cover;
+    }
+    #hotel1 {
+        height: 125px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        width: 100%;
+        background: white;
+        padding: 3px;
+        border-radius: 23px;
+    }
+    #hotel1 img{
+        border-radius: 0 20px 20px 0;
+    }
 }
