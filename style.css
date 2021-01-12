@@ -160,7 +160,6 @@ $FILTERS
 
 .button-filters:hover ,.button-filters:active{
     background-color: #0065FC;
-    border: 2px solid black;
     color: #DEEBFF;
     transition: .3s;
 }
@@ -321,7 +320,7 @@ $ACTIVITIES
 }
 #result-activities a{
     width: 80%;
-    margin: 10px auto;
+    margin: 10px 10%;
 }
 #result-activities h2{
     margin: 20px 0 20px 0;
@@ -379,7 +378,9 @@ $FOOTER
         flex-wrap: wrap;
     }
 }
-/*--------455px--------*/
+/*-----------------------------------*/
+/*             $455px                */
+/*-----------------------------------*/
 @media screen and (max-width: 455px)
 {
     #search-btn{
@@ -407,6 +408,9 @@ $FOOTER
     }
 }
 @media screen and (min-width: 600px)
+/*-----------------------------------*/
+/*             $600px                */
+/*-----------------------------------*/
 {
     #housing {
         flex-wrap: wrap;
@@ -418,7 +422,7 @@ $FOOTER
         margin: 10px auto;
     }
     .hotel {
-        width: 250px;
+        width: 80%;
     }
     #trend-housing {
         flex-wrap: wrap-reverse;
@@ -448,7 +452,7 @@ $FOOTER
         padding: 3px;
         height: 180px;
         flex-direction: column;
-        box-shadow: 2px 2px 15px rgba(165, 190, 22, 0.400), -2px -2px 15px rgba(165, 190, 22, 0.400);
+        box-shadow: 2px 2px 15px rgba(238, 255, 6, 0.4), -2px -2px 15px rgba(238, 255, 6, 0.4);
     }
     
     #hotel1 img{
@@ -478,5 +482,110 @@ $FOOTER
     }
     #hotel2 img{
         border-radius: 0 20px 20px 0;
+    }
+    /*------------------*/
+    #city-house{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #city-house h2{
+        padding-left: 0;
+    }
+    #show-more{
+        padding-left: 0;
+    }
+    #result-activities{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: 30px solid #F2F2F2;
+    }
+    #result-activities h2{
+        padding: 0;
+    }
+}
+@media screen and (min-width: 800px)
+{
+    #pop-house {
+        height: 500px;
+    }
+    #hotel2, #hotel3{
+        height: 180px;
+    }
+    #hotel2 h4, #hotel3 h4{
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    #hotel2 p, #hotel3 p {
+        font-size: 13px;
+    }
+    #desct2 ,#desct3 {
+        padding-top: 10%;
+    }
+    /*-----------------------------------*/
+    /*            $HOUSING               */
+    /*-----------------------------------*/
+    #housing {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #housing a{
+        width: 30%;
+        margin: 10px;
+    }
+    .hotel {
+        width: 90%;
+    }
+    /*-----------------------------------*/
+    /*            $ACTIVITIES            */
+    /*-----------------------------------*/
+    #result-activities{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #result-activities h2{
+        padding: 0;
+    }
+    #result-activities a:nth-of-type(2){
+        margin: 10px auto 0 10%;
+        padding: 0;
+        width: 38%;
+    }
+    #result-activities a:nth-of-type(3){
+        margin: 10px 10% 0 auto;
+        padding: 0;
+        width: 38%;
+    }
+    #result-activities a:nth-of-type(5){
+        margin: 10px auto 60px 10%;
+        padding: 0;
+        width: 38%;
+    }
+    #result-activities a:nth-of-type(6){
+        margin: 10px 10% 60px auto;
+        padding: 0;
+        width: 38%;
+    }
+    /*-----------------------------------*/
+    /*              $FOOTER              */
+    /*-----------------------------------*/
+    #footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #propos {
+        width: 48%;
+    }
+    #hebergements {
+        width: 50%;
+    }
+    #assistance {
+        margin-left: 35%;
+        width: 38%;
     }
 }
