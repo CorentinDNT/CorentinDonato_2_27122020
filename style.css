@@ -433,7 +433,7 @@ $FOOTER
         margin: 5px auto;
     }
     #pop-house {
-        height: 440px;
+        height: 400px;
     }
     .hotel-pop {
         height: 125px;
@@ -444,7 +444,13 @@ $FOOTER
         width: 40%;
         object-fit: cover;
     }
-    #item1 {
+    #item3{
+        order: 1;
+    }
+    #item1{
+        order: 5;
+    }
+    /*#item1 {                                            Grosse image en haut
         width: 80%;
     }
     #hotel1 {
@@ -452,7 +458,6 @@ $FOOTER
         padding: 3px;
         height: 180px;
         flex-direction: column;
-        box-shadow: 2px 2px 15px rgba(238, 255, 6, 0.4), -2px -2px 15px rgba(238, 255, 6, 0.4);
     }
     
     #hotel1 img{
@@ -476,13 +481,7 @@ $FOOTER
     }
     #item1{
         order: 2;
-    }
-    #hotel2{
-        flex-direction: row-reverse;
-    }
-    #hotel2 img{
-        border-radius: 0 20px 20px 0;
-    }
+    }*/
     /*------------------*/
     #city-house{
         display: flex;
@@ -506,23 +505,50 @@ $FOOTER
         padding: 0;
     }
 }
-@media screen and (min-width: 800px)
+@media screen and (min-width: 766px)
 {
-    #pop-house {
-        height: 500px;
+    /*-----------------------------------*/
+    /*             $POPULAIRE            */
+    /*-----------------------------------*/
+    #pop-house{
+        height: 320px;
     }
-    #hotel2, #hotel3{
-        height: 180px;
+    #trend-housing {
+        flex-wrap: wrap;
+        flex-direction: row;
     }
-    #hotel2 h4, #hotel3 h4{
+    #trend-housing a{
+        width: 30%;
+        margin: 10px auto;
+    }
+    .hotel-pop {
+        flex-direction: column;
+        width: 90%;
+        height: 210px;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.300), -1px -1px 15px rgba(0, 0, 0, 0.300 );
+    }
+    .hotel-pop img {
+        border-radius: 20px 20px 0 0;
+        height: 60%;
+        width: 100%;
+    }
+    .hotel-desc-t{
+        height: 40%;
+        width: 90%;
+        padding-left: 7%;
+    }
+    .hotel-desc-t h4{
         font-size: 15px;
-        margin: 10px 0;
+        font-weight: bold;
     }
-    #hotel2 p, #hotel3 p {
-        font-size: 13px;
+    .popstar{
+        padding-top: 5px;
     }
-    #desct2 ,#desct3 {
-        padding-top: 10%;
+    #item3{
+        order: 1;
+    }
+    #item1{
+        order: 0;
     }
     /*-----------------------------------*/
     /*            $HOUSING               */
@@ -579,13 +605,96 @@ $FOOTER
         flex-wrap: wrap;
     }
     #propos {
-        width: 48%;
+        order: 2;
+        width: 33%;
     }
     #hebergements {
-        width: 50%;
+        order: 1;
+        width: 33%;
     }
     #assistance {
-        margin-left: 35%;
-        width: 38%;
+        order: 3;
+        width: 33%;
+    }
+}
+@media screen and (min-width: 1366px)
+{
+    #container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 50px;
+    }
+    /*-----------------------------------*/
+    /*            $HOUSING               */
+    /*-----------------------------------*/
+    #city-house{
+        justify-content: start;
+        margin: 0;
+        background: #F2F2F2;
+        border-radius: 20px;
+        width: 65%;
+        order: -1;
+    }
+    #housing a{
+        height: 200px;
+    }
+    #show-more{
+        padding-left: 4%;
+        font-size: 18px;
+    }
+    /*-----------------------------------*/
+    /*             $POPULAIRE            */
+    /*-----------------------------------*/
+    #pop-house{
+        border-radius: 20px;
+        width: 30%;
+        height: 400px;
+    }
+    #pop-house{
+        height: 100%;
+    }
+    #trend-housing {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #trend-housing a{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .hotel-pop {
+        flex-direction: row;
+        width: 100%;
+        height: 144px;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.300), -1px -1px 15px rgba(0, 0, 0, 0.300 );
+    }
+    .hotel-pop img {
+        border-radius: 20px 0 0 20px;
+        height: 100%;
+        width: 40%;
+    }
+    .hotel-desc-t{
+        height: 100%;
+        width: 60%;
+    }
+    .hotel-desc-t h4{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .popstar{
+        padding-top: 5px;
+    }
+    #item3{
+        order: 1;
+    }
+    #item1{
+        order: 0;
+    }
+    /*-----------------------------------*/
+    /*            $ACTIVITIES            */
+    /*-----------------------------------*/
+    #result-activities{
+        border-top: none;
+        margin-top: 35px;
     }
 }
