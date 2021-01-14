@@ -158,8 +158,11 @@ $FILTERS
     border-radius: 100%;
     margin-left: -8.9px;
 }
-
-.button-filters:hover ,.button-filters:active{
+.button-filters:focus{
+    background-color: #0065FC;
+    color: #DEEBFF;
+}
+.button-filters:hover{
     background-color: #0065FC;
     color: #DEEBFF;
     transition: .3s;
