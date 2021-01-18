@@ -359,6 +359,7 @@ $FOOTER
     background: #F2F2F2;
     height: 100%;
     line-height: 30px;
+    padding-left: 7%;
 }
 .foot_liste{
     padding-left: 0;
@@ -461,14 +462,6 @@ $FOOTER
     }
     #show-more{
         padding-left: 0;
-    }
-    #result-activities{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    #result-activities h2{
-        padding: 0;
     }
 }
 @media screen and (min-width: 766px)
@@ -627,8 +620,7 @@ $FOOTER
     }
     .signup{
         order: 3;
-        margin: 0.;
-
+        margin: 0;
     }
     #container{
         flex-direction: row;
