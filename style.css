@@ -601,6 +601,35 @@ $FOOTER
 }
 @media screen and (min-width: 1366px)
 {
+    /*-----------------------------------*/
+    /*            $HOUSING               */
+    /*-----------------------------------*/
+    nav {
+        order: 2;
+        width: 315px;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 25px;
+        padding-right: 30px;
+    }
+    nav a {
+        border: none;
+        width: auto;
+        padding: 40px 20px 15px 20px;
+    }
+    nav a:hover {
+        padding-top: 39px;
+        border-bottom: none;
+        border-top: 1px solid blue;
+    }
+    .logo{
+        width: calc(100% - 485px);
+    }
+    .signup{
+        order: 3;
+        margin: 0.;
+
+    }
     #container{
         flex-direction: row;
         flex-wrap: wrap;
