@@ -463,6 +463,14 @@ $FOOTER
     #show-more{
         padding-left: 0;
     }
+    #act-contain{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #result-activities h2{
+        padding: 0;
+    }
 }
 @media screen and (min-width: 766px)
 {
@@ -548,6 +556,14 @@ $FOOTER
 }
 @media screen and (min-width: 900px)
 {
+    #result-activities{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #result-activities h2{
+        padding: 0;
+    }
     #result-activities {
         width: 100%;
     }
